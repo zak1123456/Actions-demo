@@ -1,7 +1,8 @@
 name: demo workflow
 on:
   push:
-    branches: -Prashanth -master
+    branches: 
+      - Prashanth
 jobs:
   demo-prashanth:
     runs-on: ubuntu-latest
