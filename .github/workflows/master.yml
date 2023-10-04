@@ -1,0 +1,13 @@
+name: demo workflow
+on:
+  push:
+    branches:
+      - Prashanth
+jobs:
+  demo-prashanth:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.1.0
+      - name: echoing
+        run: echo Hello World
