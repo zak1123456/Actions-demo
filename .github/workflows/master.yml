@@ -31,5 +31,5 @@ jobs:
           password: ${{ secrets.PRASHANTH_PASSWORD }}
       - name: Print sensitive
         run: |
-          ${{ secrets.PRASHANTH_USERNAME }}
-          ${{ secrets.PRASHANTH_PASSWORD }}  
+          echo ${{ secrets.PRASHANTH_USERNAME }}
+          echo ${{ secrets.PRASHANTH_PASSWORD }}  
