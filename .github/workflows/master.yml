@@ -24,3 +24,12 @@ jobs:
           java-version: '17'
       - name: Build code
         run: mvn package
+      - name: Login to docker hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.PRASHANTH_USERNAME }}
+          password: ${{ secrets.PRASHANTH_PASSWORD }}
+      - name: Print sensitive
+        run: |
+          ${{ secrets.PRASHANTH_USERNAME }}
+          ${{ secrets.PRASHANTH_PASSWORD }}  
